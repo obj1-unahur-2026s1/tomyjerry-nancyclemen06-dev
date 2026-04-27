@@ -1,17 +1,22 @@
 import tomJerryNibbles.*
 
-describe "Grupo de test" {
+describe "Grupo de pruebas de tom, jerry y otros" {
 
-  test "test 1" {
-    assert.equals(100, 50+50)
+  test "Al inicio, la velocidad máxima de Tom es 10" {
+    assert.equals(10, tom.velocidadMaxima() ) //equals, el valor que le paso y espero (100), tiene que ser igual al del metodo que llamaq el objeto
   }
 
-  test "test 3" {
-    assert.that(true)
+  test "Si corre 24 metros, entonces su velocidad máxima pasa a ser 14" {
+    tom.correr(24)
+    assert.equals(8.8 , tom.velocidadMaxima())
+  }
+
+  test "test 3"{
+    assert.that(true) //that, paso el test cuando devuelve TRUE
   }
 
   test "test 4" {
-    assert.notThat(false)
+    assert.notThat(false) //notThat, paso el test cuando devuelve FALSE
   }
 
 }
